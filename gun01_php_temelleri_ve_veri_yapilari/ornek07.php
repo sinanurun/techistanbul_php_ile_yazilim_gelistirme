@@ -200,11 +200,13 @@ unset($a, $b, $c, $d, $e);
 
 // Bu değişkenler artık tanımsız olduğundan var_dump kullanılamaz!
 // Aşağıdaki satırlar hata verir:
+/*
 echo $a;
 var_dump($a); // HATA: Undefined variable
 var_dump($b);
 var_dump($c);
 var_dump($d);
 var_dump($e);
+/
 
 ?>
