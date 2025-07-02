@@ -7,6 +7,7 @@ Boolean
 Array
 Object
 NULL
+Resource referans bazlı veri bilgileri tutulur tam olarak bir veri tipi değildir
 
 gettype(): Değişkenin tipini döndürür.​
 
