@@ -6,4 +6,12 @@ for ($i = 1; $i <= 10; $i++) {
     echo "$i ";
 }
 
+$renkler = array("Kırmızı", "Yeşil", "Mavi");
+
+foreach ($renkler as $renk) {
+    if($renk == "Yeşil") break;
+    echo "Renk: $renk <br>";
+}  
+
+
 ?>

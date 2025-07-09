@@ -5,6 +5,8 @@ $matris = [
     [7, 8, 9]
 ];
 
+
+
 $satirSayisi = count($matris);
 $sutunSayisi = count($matris[0]); // Her satırın aynı sayıda sütun içerdiği varsayılır
 
@@ -15,18 +17,18 @@ for ($i = 0; $i < $satirSayisi; $i++) {
     echo "<br>"; // Web tarayıcısında satır sonu için
 }
 
-/*
+
 foreach ($matris as $satir) {
     foreach ($satir as $eleman) {
         echo $eleman . " ";
     }
     echo "<br>";
 }
-*/
 
-/*
+
+
 $rehber = [
-    "Ali" => ["telefon" => "123", "email" => "ali@example.com"],
+    "Ali" => ["telefon" => "123", "email" => "ali@example.com","sehir"=>"istanbul"],
     "Ayşe" => ["telefon" => "456", "email" => "ayse@example.com"]
 ];
 
@@ -36,6 +38,6 @@ foreach ($rehber as $isim => $bilgiler) {
         echo "- $tip: $veri<br>";
     }
 }
-    */
+    
 
 ?>

@@ -3,20 +3,23 @@
 // Aynı değişkenin farklı değerlerine göre farklı işlemler yapmak için kullanılır. 
 // Özellikle birçok if...elseif yazmaktan kaçınmak için idealdir.
 
-$gun = "pazar";
+$gun = "10Temmuz";
 
 switch ($gun) {
-    case "pazartesi":
-        echo "Bugün Pazartesi.";
+    case "2Temmuz":
+        echo "Atölyede 1. gün.";
         break;
-    case "salı":
-        echo "Bugün Salı.";
+    case "9Temmuz":
+        echo "Atölyede 2. gün.";
         break;
-    case "pazar":
-        echo "Bugün Pazar.";
+    case "16Temmuz":
+        echo "Atölyede 3. gün.";
+        break;
+    case "23Temmuz":
+        echo "Atölyede 4. gün.";
         break;
     default:
-        echo "Diğer günler...";
+        echo "Bu Tarihte Atölye Yok";
 }
 
 ?>

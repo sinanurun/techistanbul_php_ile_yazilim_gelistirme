@@ -8,21 +8,21 @@ foreach ($dizi as $anahtar => $değer) {
 }
     */
 
-/*
+
 $renkler = array("Kırmızı", "Yeşil", "Mavi");
 
 foreach ($renkler as $renk) {
     echo "Renk: $renk <br>";
 }  
-*/
 
-/*
+
+
 $kullanici = array("Ad" => "Ahmet", "Yaş" => 25, "Şehir" => "İstanbul");
 
 foreach ($kullanici as $ozellik => $deger) {
     echo "$ozellik: $deger <br>";
 }
-*/
+
 
 
 ?>

@@ -8,6 +8,7 @@ do {
 } while (koşul);
  */
 
+ echo"do..while";
 $i = 6;
 do {
     echo "Sayı: $i <br>";

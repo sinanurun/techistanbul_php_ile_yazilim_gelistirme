@@ -21,6 +21,8 @@ $sehirler = array("İstanbul", "Ankara", "İzmir");
 // Veya kısa yol (PHP 5.4+)
 $sehirler = ["İstanbul", "Ankara", "İzmir"];
 print_r($sehirler);
+
+echo "<hr>";
 /*2. İlişkisel Diziler (Associative Arrays)
 Anahtarlar kullanıcı tarafından belirlenen dizilerdir (string ya da sayı olabilir).
 */
@@ -32,8 +34,8 @@ print_r($kullanici);
 /*3. Çok Boyutlu Diziler (Multidimensional Arrays)
 Dizinin içinde başka bir dizi barındırır.
 */
-
-
+echo "<hr>";
+//ogrenciler[3][2]
 $ogrenciler = [
     ["Adem", 20],
     ["Zeynep", 22],

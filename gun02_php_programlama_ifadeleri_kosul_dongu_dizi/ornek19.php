@@ -9,11 +9,12 @@ $dizi = ["elma", "armut", "muz"];
 $mevsimler = ["İlkbahar", "Yaz", "Sonbahar", "Kış"];
 echo $mevsimler[1]; // Yaz
 
-echo "<br>";
+echo "<hr>";
  // dizi elemanlarına erişim anahtarlı
 $kisi = ["isim" => "Ahmet", "yas" => 30];
 echo $kisi["isim"]; // Ahmet
-echo "<br>";
+echo $kisi["yas"]; // Ahmet
+echo "<hr>";
 
 // dizi methodları
 
@@ -22,23 +23,24 @@ echo "<br>";
 $hayvanlar = ["köpek", "kedi"];
 $hayvanlar[] = "kuş"; // Otomatik index atar
 print_r($hayvanlar);
-echo "<br>";
+echo "<hr>";
+
 $kisi = ["isim" => "Ayşe"];
 $kisi["soyisim"] = "Demir";
 print_r($kisi);
-echo "<br>";
+echo "<hr>";
 
 // dizi uzunluğu eleman sayısı
 $renkler = ["kırmızı", "yeşil", "mavi"];
 echo count($renkler); // 3
-echo "<br>";
+echo "<hr>";
 
 
 // dizi sonuna eleman ekleme 
 $sebzeler = ["patates", "domates"];
 array_push($sebzeler, "biber", "soğan");
 print_r($sebzeler);
-echo "<br>";
+echo "<hr>";
 
 //dizi sonunda eleman silme
 $sebzeler = ["patates", "domates"];
@@ -47,7 +49,7 @@ echo $sonEleman; // domates
 print_r($sebzeler);
 
 
-echo "<br>";
+echo "<hr>";
 
 //dizinin ilk elemanını silme
 $sebzeler = ["patates", "domates"];
@@ -56,7 +58,7 @@ echo $ilkEleman; // patates
 print_r($sebzeler);
 
 
-echo "<br>";
+echo "<hr>";
 
 //diziden belirli bölümü alma
 $renkler = ["kırmızı", "yeşil", "mavi", "turuncu"];

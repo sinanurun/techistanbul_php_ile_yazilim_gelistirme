@@ -3,7 +3,7 @@
 
 //koşul ? doğruysa_değer : yanlışsa_değer;
 
-$yas = 10;
+$yas = 19;
 
 echo ($yas >= 18) ? "Ehliyet Alabilir" : "Ehliyet Alamaz";
 

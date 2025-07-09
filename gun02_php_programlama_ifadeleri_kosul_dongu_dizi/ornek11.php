@@ -6,14 +6,15 @@ while (koşul) {
     // Koşul doğru olduğu sürece çalışacak kod
 }
 */
-
+/*
+ echo"while döngüsü";
 $i = 1;
 while ($i <= 5) {
     echo "Sayı: $i <br>";
     $i++;
 }
+*/
 
-/*
 echo "<table border=1>";
 
 $i = 1;
@@ -23,5 +24,5 @@ while ($i <= 5) {
 }
 
 echo "</table>";
-*/
+
 ?>

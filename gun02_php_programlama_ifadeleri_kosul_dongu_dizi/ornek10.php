@@ -10,13 +10,19 @@ for (başlangıç; koşul; artış/azalış) {
 for ($i = 1; $i <= 5; $i++) {
     echo "Sayı: $i <br>";
 }
-
 /*
+$kelime = "merhaba";
+for ($i = 0; $i < strlen($kelime); $i++) {
+    echo "harf: $kelime[$i] <br>";
+}
+*/
+
+
 echo "<table border=1>";
 
 for ($i = 1; $i <= 5; $i++) {
     echo "<tr><td>Sayı: $i </td></tr>";
 }
 echo "</table>";
-*/
+
 ?>

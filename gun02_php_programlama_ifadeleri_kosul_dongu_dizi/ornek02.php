@@ -4,10 +4,16 @@
 
 $yas = 16;
 
-if ($yas >= 18) {
+if ($yas >= 18) // eğer yaş büyük eşit 18 ise
+{
     echo "Ehliyet alabilirsiniz.";
-} else {
+} else // (değilse) yaş 18den küçükse
+{
     echo "Henüz ehliyet alamazsınız.";
 }
+
+if ($yas >= 18) echo "Ehliyet alabilirsiniz.";
+else echo "Henüz ehliyet alamazsınız.";
+
 
 ?>
