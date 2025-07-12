@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Soru Bankası - 50 Soru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        ol, ul {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🧑‍🏫 PHP İlk 2 Hafta Soru Bankası (Toplam: 50 Soru)</h1>
+
+<h2>1. Koşullu Yapılar (if-else, ternary, switch) 🧩</h2>
+<ol>
+    <li>Aşağıdaki kodun çıktısı nedir?
+<pre><code>$a = 10;
+if ($a == "10") {
+    echo "Eşit";
+} else {
+    echo "Değil";
+}</code></pre>
+    </li>
+    <li><code>if</code> yerine ternary operatör kullanarak aşağıdaki işlemi tekrar yazınız:
+<pre><code>$yas = 18;
+if ($yas >= 18) {
+    echo "Oy kullanabilir";
+} else {
+    echo "Oy kullanamaz";
+}</code></pre>
+    </li>
+    <li>Kullanıcının notunu alıp harf notuna çeviren bir program yazın:
+<ul>
+    <li>90-100: A</li>
+    <li>80-89: B</li>
+    <li>70-79: C</li>
+    <li>60-69: D</li>
+    <li>Altı: F</li>
+</ul>
+    </li>
+    <li><code>switch-case</code> kullanarak kullanıcıdan alınan sayının haftanın hangi günü olduğunu gösteren bir örnek yazınız. (1: Pazartesi, ..., 7: Pazar)</li>
+    <li><code>==</code> ile <code>===</code> arasındaki farkı if-else yapısında bir örnekle açıklayınız.</li>
+    <li>Ternary operatörleri iç içe kullanarak, bir öğrencinin ortalaması 50'den büyükse geçti, değilse kaldı yazan kodu yazınız.</li>
+    <li>Aşağıdaki kodda hata var mı? Varsa düzeltilmiş halini yazınız.
+<pre><code>if ($x > 5)
+echo "Büyük";
+Else
+echo "Küçük";</code></pre>
+    </li>
+    <li>3 sayıdan en büyüğünü bulan if-else bloklarıyla çalışan bir kod yazınız.</li>
+    <li>Yaşı 18’den büyükse ehliyet alabilir, küçükse beklemeli mesajı veren bir kod yazınız.</li>
+    <li>Girilen ay numarasına göre mevsimi yazdıran bir <code>switch-case</code> örneği yazınız.</li>
+</ol>
+
+<h2>2. Döngüler (for, while, do-while, foreach) 🔁</h2>
+<ol start="11">
+    <li>1'den 10'a kadar olan sayıları alt alta yazdıran bir <code>for</code> döngüsü yazınız.</li>
+    <li>1'den 100'e kadar olan çift sayıların toplamını hesaplayan bir <code>while</code> döngüsü yazınız.</li>
+    <li>Aşağıdaki çıktıyı üreten <code>for</code> döngüsünü yazınız:
+<pre><code>1 - Tek
+2 - Çift
+3 - Tek
+...
+10 - Çift</code></pre>
+    </li>
+    <li>1'den başlayıp kullanıcıdan alınan bir sayıya kadar olan tüm sayıların çarpımını hesaplayan bir <code>do-while</code> döngüsü yazınız.</li>
+    <li>Bir dizideki elemanları <code>foreach</code> döngüsüyle ekrana yazdırınız:
+<pre><code>$dizi = ["elma", "muz", "karpuz"];</code></pre>
+    </li>
+    <li><code>break</code> komutunu kullanarak, 1'den 10'a kadar yazan ama 5’e gelince duran bir <code>for</code> döngüsü yazınız.</li>
+    <li><code>continue</code> komutunu kullanarak, 1'den 10’a kadar olan sayılardan tek olanları yazdıran bir <code>for</code> döngüsü yazınız.</li>
+    <li>Aşağıdaki çıktıyı üreten iç içe geçmiş iki <code>for</code> döngüsü yazınız:
+<pre><code>1
+22
+333
+4444
+55555</code></pre>
+    </li>
+    <li>1'den 10’a kadar olan sayıları ters sırada yazdıran bir <code>for</code> döngüsü yazınız.</li>
+    <li>Belirli bir aralıktaki asal sayıları bulan bir döngü örneği yazınız. (Örn: 2-50 arası)</li>
+</ol>
+
+<h2>3. Diziler & String İşlemleri 📦</h2>
+<ol start="21">
+    <li><code>["PHP", "HTML", "CSS"]</code> dizisindeki elemanları <code>foreach</code> ile alt alta yazdırınız.</li>
+    <li>Aşağıdaki dizideki değerlerin toplamını <code>foreach</code> ile bulunuz:
+<pre><code>$sayilar = [3, 5, 7, 2];</code></pre>
+    </li>
+    <li>İsimlerden oluşan bir diziyi alfabetik olarak sıralayan ve ekrana yazdıran bir kod yazınız.</li>
+    <li><code>in_array()</code> fonksiyonunu kullanarak bir ismin dizide olup olmadığını kontrol eden bir örnek yazınız.</li>
+    <li><code>array_key_exists()</code> ile bir anahtarın dizide olup olmadığını kontrol eden örnek yazınız.</li>
+    <li>Bir stringi karakter karakter bölen ve her karakteri alt alta yazdıran bir <code>foreach</code> döngüsü yazınız.</li>
+    <li><code>explode()</code> kullanarak bir cümleyi kelimelere bölüp, her kelimeyi alt alta yazdırınız.</li>
+    <li><code>str_replace()</code> ile cümle içindeki bir kelimeyi başka bir kelimeyle değiştiriniz.</li>
+    <li><code>strlen()</code> ve <code>strpos()</code> fonksiyonlarını kullanarak bir cümlenin ilk boşluk pozisyonunu ve uzunluğunu bulan bir kod yazınız.</li>
+    <li>Bir metindeki sesli harfleri sayan bir döngü yazınız.</li>
+</ol>
+
+<h2>4. Uygulama Soruları (Koşullu Yapı + Döngü + Dizi Birlikte) 💡</h2>
+<ol start="31">
+    <li>1'den 100'e kadar olan sayılardan hem 3'e hem de 5'e tam bölünenleri ekrana yazdıran bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının faktöriyelini hesaplayan bir <code>for</code> döngüsü yazınız.</li>
+    <li>10 elemanlı rastgele sayılardan oluşan bir dizi oluşturun ve bu dizideki en büyük ve en küçük sayıyı bulan bir kod yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının asal olup olmadığını kontrol eden bir kod yazınız.</li>
+    <li>1'den 10’a kadar olan sayıların karelerini tablo şeklinde yazdıran bir <code>for</code> döngüsü yazınız.</li>
+    <li>Kullanıcıdan alınan bir kelimenin tersten yazımını bulan bir döngü yazınız.</li>
+    <li>1'den 10’a kadar olan sayıların kareköklerini hesaplayan bir <code>for</code> döngüsü yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının mükemmel sayı olup olmadığını kontrol eden bir döngü yazınız. (Mükemmel sayı: kendisi hariç pozitif bölenlerinin toplamı kendisine eşit olan sayı)</li>
+    <li>10 elemanlı bir dizideki pozitif ve negatif sayıları ayrı ayrı listeleyen bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir cümlede kaç kelime olduğunu sayan bir kod yazınız.</li>
+</ol>
+
+<h2>5. Zor Sorular (İleri Seviye Uygulamalar) 🧠</h2>
+<ol start="41">
+    <li>1'den 100'e kadar olan sayıları yazdırırken, 3’e bölünenleri “Fizz”, 5’e bölünenleri “Buzz”, ikisine birden bölünenleri “FizzBuzz” yazan bir <code>for</code> döngüsü yazınız.</li>
+    <li>Fibonacci serisinin ilk 15 terimini yazdıran bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının Armstrong sayısı olup olmadığını kontrol eden bir döngü yazınız. (Armstrong sayısı: basamaklarının küpleri toplamı kendisine eşit olan sayı)</li>
+    <li>Kullanıcıdan alınan bir tamsayıyı ikili sisteme (binary) çeviren bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının palindrom olup olmadığını kontrol eden bir döngü yazınız. (Palindrom: 121 gibi tersten okunduğunda aynı olan sayılar)</li>
+    <li>1'den 100'e kadar olan sayıları yazarken tek olanları mavi, çift olanları kırmızı renkte ekrana yazdıran bir döngü yazınız. (<code>HTML</code> çıktı üretilebilir.)</li>
+    <li>Kullanıcıdan alınan iki sayının EBOB’unu bulan bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir sayının tam bölenlerini bulan bir döngü yazınız.</li>
+    <li>Kullanıcıdan alınan bir cümledeki her kelimenin baş harfini büyük yapan bir kod yazınız. (<code>ucwords()</code> olmadan)</li>
+    <li>Kullanıcıdan alınan bir cümledeki kelimeleri tersten yazan bir döngü yazınız.</li>
+</ol>
+
+</body>
+</html>
