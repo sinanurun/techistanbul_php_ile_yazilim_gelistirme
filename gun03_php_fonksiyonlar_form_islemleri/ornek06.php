@@ -7,6 +7,7 @@ yapılan işlemlerden gönderilen değerde etkilenir
 değişkenler aslında veriyi referans eden kavramlardır
     */
 
+   // $sayi => $a
 function arttir(&$sayi) {
     $sayi++;
 }

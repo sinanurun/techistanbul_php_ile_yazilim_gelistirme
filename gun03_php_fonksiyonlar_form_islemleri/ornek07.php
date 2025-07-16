@@ -10,5 +10,6 @@ $sayHello = function($isim) {
 };
 
 $sayHello("Ayşe"); // Çıktı: Merhaba Ayşe
+$sayHello("Fatma"); // Çıktı: Merhaba Ayşe
 
 ?>

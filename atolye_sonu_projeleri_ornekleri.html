@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Eğitim Seti - 10 Mini Proje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        ul {
+            margin: 0 0 1em 2em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>PHP Eğitim Seti - 10 Mini Proje</h1>
+<p><strong>Amaç:</strong> 4 haftalık PHP eğitim sonunda öğrencilerin öğrendiklerini pekiştirmesi için uygulanabilecek mini proje seti.</p>
+
+<!-- PROJE 1 -->
+<h2>Proje 1: Blog Yazısı Yönetimi Sistemi</h2>
+<p><strong>Amaç:</strong> Kullanıcıların blog yazısı ekleyebileceği, düzenleyebileceği ve silebileceği bir sistem.</p>
+<p><strong>Neden Önemli?</strong> CRUD işlemlerinin temelini oluşturur. Veritabanına veri nasıl girilir, düzenlenir, silinir öğretilir.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE blog;
+USE blog;
+
+CREATE TABLE yazilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    baslik VARCHAR(255),
+    icerik TEXT,
+    tarih DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Tüm yazıları listeler</td></tr>
+    <tr><td>ekle.php</td><td>Yeni yazı ekleme formu ve işlemi</td></tr>
+    <tr><td>duzenle.php?id=1</td><td>Belirtilen ID'ye göre yazıyı düzenler</td></tr>
+    <tr><td>sil.php?id=1</td><td>Belirtilen ID'ye göre yazıyı siler</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>MySQLi ile veritabanı işlemleri</li>
+    <li>CRUD işlemleri</li>
+    <li>GET/POST metotları</li>
+    <li>Dinamik içerik gösterimi</li>
+</ul>
+
+<!-- PROJE 2 -->
+<h2>Proje 2: Ürün Takip Uygulaması</h2>
+<p><strong>Amaç:</strong> Stoktaki ürünleri takip edebilecek, yeni ürün ekleyebilecek, güncelleyebilecek ve silebilecek bir uygulama.</p>
+<p><strong>Neden Önemli?</strong> Sayısal değerlerle çalışmayı öğretir. Stok yönetimi gibi gerçek hayat senaryosunu yansıtır.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE stok;
+USE stok;
+
+CREATE TABLE urunler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(100),
+    fiyat DECIMAL(10,2),
+    stok_miktari INT,
+    tarih DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Ürünleri listeler</td></tr>
+    <tr><td>ekle.php</td><td>Yeni ürün ekleme</td></tr>
+    <tr><td>duzenle.php?id=1</td><td>Ürün bilgisi güncelleme</td></tr>
+    <tr><td>sil.php?id=1</td><td>Ürün silme</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Sayısal değerlerle çalışma</li>
+    <li>Fiyat ve miktar gibi alanlarla çalışmak</li>
+    <li>Formatlanmış çıktı üretme</li>
+</ul>
+
+<!-- PROJE 3 -->
+<h2>Proje 3: Anket Oluşturucu ve Katılım Sağlayanlar</h2>
+<p><strong>Amaç:</strong> Anket oluşturup katılımcıların cevap verdiği bir sistem.</p>
+<p><strong>Neden Önemli?</strong> İlişkisel veri modellemeyi öğretir. Birden fazla tabloyla nasıl çalışılacağını kavratır.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE anket;
+USE anket;
+
+CREATE TABLE anketler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    soru VARCHAR(255),
+    secenek1 VARCHAR(100),
+    secenek2 VARCHAR(100),
+    secenek3 VARCHAR(100)
+);
+
+CREATE TABLE oylar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    anket_id INT,
+    kullanici_ad VARCHAR(50),
+    secim VARCHAR(100),
+    FOREIGN KEY (anket_id) REFERENCES anketler(id)
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Anket listesi</td></tr>
+    <tr><td>olustur.php</td><td>Yeni anket ekleme</td></tr>
+    <tr><td>detay.php?id=1</td><td>Anket detayına oy verme veya sonuçları görme</td></tr>
+    <tr><td>sonuclar.php?id=1</td><td>Oyların toplamını gösterme</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>İlişkisel veri modelleme</li>
+    <li>Aynı anda birden fazla tabloyla çalışma</li>
+    <li>Kullanıcıdan gelen veriyi işleyebilme</li>
+</ul>
+
+<!-- Diğer projeler de aynı yapıyla devam ediyor... -->
+
+<!-- Devam etmek istersen buraya diğer projeleri ekleyebilirim -->
+
+</body>
+</html>

@@ -7,12 +7,16 @@ böylece fonksiyonlar bir değişkene atanabilir
     */
 
 function topla($a, $b) {
-    return $a + $b;
+    $islem_sonucu = $a+ $b;
+   // echo $islem_sonucu;
+    return $islem_sonucu;
 }
 
+echo topla(8,9);
+
+echo "<br>";
 $sonuc = topla(3, 5);
 echo $sonuc; // Çıktı: 8
-
 
 
 

@@ -11,6 +11,7 @@ function selamVer($isim) {
 }
 
 selamVer("Ahmet"); // Çıktı: Merhaba Ahmet
+selamver("Kemal");
 
 
 

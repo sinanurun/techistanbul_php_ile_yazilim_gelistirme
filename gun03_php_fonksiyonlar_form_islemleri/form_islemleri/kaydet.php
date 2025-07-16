@@ -1,14 +1,19 @@
 <?php
+/*
+echo $_POST["ad"]."<br>";
+echo $_REQUEST["ad"]."<br>";
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ad = $_POST['ad']; // $_REQUEST['ad']
-    $sehir = $_POST['sehir'];
+    $sehir = $_POST['sehir'];// $_REQUEST['sehir']
 
     echo "Merhaba $ad<br>";
     echo "Şehriniz: $sehir";
 }
-
+*/
 /*
 <?php
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $ad = $_GET['ad'];
     $sehir = $_GET['sehir'];
@@ -17,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo "Şehriniz: $sehir";
 }
 ?>
+
 */
 //<script>alert('Hileli kod!');</script>
 /*

@@ -10,8 +10,9 @@ $a = 10;
 function degerOku() {
     global $a;
     echo $a;
+    $a++;
 }
 
 degerOku(); // Çıktı: 10
-
+echo $a; //11
 ?>

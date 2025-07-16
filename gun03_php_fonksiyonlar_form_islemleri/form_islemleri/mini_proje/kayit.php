@@ -12,6 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Burada veritabanına kaydetme işlemi yapılabilir
     }
 
-  //  echo $ad, $email, $sifre;
+    echo $ad, $email, $sifre;
 }
 ?>

@@ -1,4 +1,4 @@
-<form action="kaydet.php" method="post">
+<form action="kaydet.php" method="get">
 <!--
 <form action="kaydet2.php" method="post">
 -->

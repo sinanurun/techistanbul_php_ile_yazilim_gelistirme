@@ -7,9 +7,15 @@ bu yöntemle tanımlanan değişkenler fonksiyon her çağırıldığında son d
     */
 
 function sayac() {
+    
     static $sayi = 0;
-    echo $sayi;
+    echo "sayi    " . $sayi;
+    echo "<br>";
     $sayi++;
+    $sayi2 = 5;
+    echo "sayi2    " . $sayi2;
+    $sayi2++;
+    echo "<br>";
 }
 
 sayac(); // Çıktı: 0
