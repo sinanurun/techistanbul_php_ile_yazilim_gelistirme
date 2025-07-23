@@ -40,7 +40,7 @@
 <body>
 
 <h1>PHP Eğitim Seti - 10 Mini Proje</h1>
-<p><strong>Amaç:</strong> 4 haftalık PHP eğitim sonunda öğrencilerin öğrendiklerini pekiştirmesi için uygulanabilecek mini proje seti.</p>
+<p><strong>Amaç:</strong> 4 haftalık PHP eğitim sonunda öğrencilerin öğrendikleri konuları pekiştirmesi için uygulanabilecek mini proje seti.</p>
 
 <!-- PROJE 1 -->
 <h2>Proje 1: Blog Yazısı Yönetimi Sistemi</h2>
@@ -155,9 +155,257 @@ CREATE TABLE oylar (
     <li>Kullanıcıdan gelen veriyi işleyebilme</li>
 </ul>
 
-<!-- Diğer projeler de aynı yapıyla devam ediyor... -->
+<!-- PROJE 4 -->
+<h2>Proje 4: Kitap Kütüphanesi</h2>
+<p><strong>Amaç:</strong> Kütüphane sisteminde kitap eklemek, ödünç vermek ve geri almak.</p>
+<p><strong>Neden Önemli?</strong> Durum tabanlı veri yönetimini öğretir. Durumu değişen kayıtlarla çalışmayı sağlar.</p>
 
-<!-- Devam etmek istersen buraya diğer projeleri ekleyebilirim -->
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE kutuphane;
+USE kutuphane;
+
+CREATE TABLE kitaplar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    isim VARCHAR(100),
+    yazar VARCHAR(100),
+    durum ENUM('mevcut', 'ödünçte') DEFAULT 'mevcut'
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Kitapları listeleme</td></tr>
+    <tr><td>ekle.php</td><td>Yeni kitap ekleme</td></tr>
+    <tr><td>odunc_al.php?id=1</td><td>Kitabı ödünç alma (durumu değiştir)</td></tr>
+    <tr><td>geri_ver.php?id=1</td><td>Kitabı kütüphaneye iade etme</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>ENUM tipiyle çalışma</li>
+    <li>Kayıt durumunu dinamik olarak değiştirmek</li>
+    <li>Basit mantık yordamlarıyla iş akışı kurmak</li>
+</ul>
+
+<!-- PROJE 5 -->
+<h2>Proje 5: İletişim Formu ve Mesaj Yönetimi</h2>
+<p><strong>Amaç:</strong> Ziyaretçilerden gelen mesajları kaydedip yönetebilmek.</p>
+<p><strong>Neden Önemli?</strong> Form validasyonu ve veri güvenliğini öğretir. Gerçek hayatta en çok kullanılan yapılardan biridir.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE iletisim;
+USE iletisim;
+
+CREATE TABLE mesajlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(50),
+    email VARCHAR(100),
+    konu VARCHAR(100),
+    icerik TEXT,
+    tarih DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Gelen mesajları listeler</td></tr>
+    <tr><td>form.php</td><td>Ziyaretçi için iletişim formu</td></tr>
+    <tr><td>sil.php?id=1</td><td>Belirli mesajı siler</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Form validasyonu</li>
+    <li>HTML özel karakterlerini temizleme (`htmlspecialchars`)</li>
+    <li>Veri güvenliği</li>
+</ul>
+
+<!-- PROJE 6 -->
+<h2>Proje 6: Film Listesi ve İzleme Durumu</h2>
+<p><strong>Amaç:</strong> Kullanıcının izlediği filmleri takip ettiği bir liste.</p>
+<p><strong>Neden Önemli?</strong> Boolean veri tipleriyle çalışmayı öğretir. Liste içinde işlem yapma alışkanlığı kazandırır.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE film_listesi;
+USE film_listesi;
+
+CREATE TABLE filmler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(100),
+    tur VARCHAR(50),
+    izlendi BOOLEAN DEFAULT FALSE
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Filmleri listeler</td></tr>
+    <tr><td>ekle.php</td><td>Yeni film ekleme</td></tr>
+    <tr><td>izle.php?id=1</td><td>Film izlendi olarak işaretlenir</td></tr>
+    <tr><td>sil.php?id=1</td><td>Film silinir</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Boolean alan kullanımı</li>
+    <li>Durum değişikliği için buton kullanımı</li>
+    <li>Liste içinde işlem yapma</li>
+</ul>
+
+<!-- PROJE 7 -->
+<h2>Proje 7: Sınav Sonuçları Takip Sistemi</h2>
+<p><strong>Amaç:</strong> Öğrenci notlarını girip görüntüleyebileceğiniz bir sistem.</p>
+<p><strong>Neden Önemli?</strong> Sayısal işlemler ve ortalamalarla çalışma becerisini geliştirir.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE sinav_sonuclari;
+USE sinav_sonuclari;
+
+CREATE TABLE ogrenciler (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(50),
+    soyad VARCHAR(50),
+    matematik INT,
+    turkce INT,
+    fen INT
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Öğrenci listesi ve not ortalaması</td></tr>
+    <tr><td>ekle.php</td><td>Yeni öğrenci ekleme</td></tr>
+    <tr><td>duzenle.php?id=1</td><td>Notları düzenleme</td></tr>
+    <tr><td>sil.php?id=1</td><td>Öğrenci silme</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Sayısal işlemler</li>
+    <li>Ortalama hesaplama</li>
+    <li>Tablo formatında çıktı sunma</li>
+</ul>
+
+<!-- PROJE 8 -->
+<h2>Proje 8: Yorum Sistemi (Blog Yazısına Yorum Ekleyen Sistem)</h2>
+<p><strong>Amaç:</strong> Belirli bir blog yazısına kullanıcıların yorum yapabileceği bir sistem.</p>
+<p><strong>Neden Önemli?</strong> Çok seviyeli veri yapılarıyla çalışma alışkanlığını kazandırır.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE yorumlar;
+USE yorumlar;
+
+CREATE TABLE yazilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    baslik VARCHAR(255),
+    icerik TEXT
+);
+
+CREATE TABLE yorumlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    yazi_id INT,
+    kullanici_ad VARCHAR(50),
+    yorum TEXT,
+    tarih DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (yazi_id) REFERENCES yazilar(id)
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Yazı listesi</td></tr>
+    <tr><td>detay.php?id=1</td><td>Yazı detayı + yorum alanı</td></tr>
+    <tr><td>ekle_yorum.php</td><td>Yorum ekleme işlemi</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>İlişkisel veritabanı tasarımı</li>
+    <li>Çok seviyeli veri işleme</li>
+    <li>Dinamik URL ile işlem yapma</li>
+</ul>
+
+<!-- PROJE 9 -->
+<h2>Proje 9: Kullanıcı Profili ve Ayarlar Paneli</h2>
+<p><strong>Amaç:</strong> Oturum açan kullanıcının profil bilgilerini görüntüleyip güncelleyebileceği bir panel.</p>
+<p><strong>Neden Önemli?</strong> Session yönetimi ve kullanıcı profili gibi gerçek dünya senaryosuna yakındır.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE profil;
+USE profil;
+
+CREATE TABLE kullanicilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(50),
+    email VARCHAR(100),
+    sifre VARCHAR(255),
+    biyografi TEXT
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>giris.php</td><td>Oturum açma</td></tr>
+    <tr><td>profil.php</td><td>Profil bilgilerini gösterme</td></tr>
+    <tr><td>duzenle.php</td><td>Bilgiyi düzenleme</td></tr>
+    <tr><td>cikis.php</td><td>Oturumu kapatma</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Session yönetimi</li>
+    <li>Şifre hash’leme</li>
+    <li>Profil düzenleme</li>
+</ul>
+
+<!-- PROJE 10 -->
+<h2>Proje 10: Rezervasyon Sistemi (Restoran veya Otel)</h2>
+<p><strong>Amaç:</strong> Kullanıcının masa veya oda rezervasyonu yaptığı bir sistem.</p>
+<p><strong>Neden Önemli?</strong> Tarih ve saat gibi özel alanlarla çalışmayı öğretir.</p>
+
+<h3>Veritabanı Şeması</h3>
+<pre>
+CREATE DATABASE rezervasyon;
+USE rezervasyon;
+
+CREATE TABLE rezervasyonlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(50),
+    soyad VARCHAR(50),
+    tel VARCHAR(20),
+    tarih DATE,
+    saat TIME,
+    durum ENUM('beklemede', 'onaylandı', 'iptal') DEFAULT 'beklemede'
+);
+</pre>
+
+<h3>Dosyalar</h3>
+<table>
+    <tr><th>Dosya</th><th>Açıklama</th></tr>
+    <tr><td>index.php</td><td>Rezervasyon listesi</td></tr>
+    <tr><td>ekle.php</td><td>Yeni rezervasyon ekleme</td></tr>
+    <tr><td>onayla.php?id=1</td><td>Rezervasyon durumunu onaylama</td></tr>
+    <tr><td>iptal.php?id=1</td><td>Rezervasyon iptal etme</td></tr>
+</table>
+
+<h3>Öğrenilen Konular</h3>
+<ul>
+    <li>Tarih ve saat ile çalışma</li>
+    <li>ENUM durum yönetimi</li>
+    <li>Kullanıcıdan alınan verilerle işlem yapma</li>
+</ul>
 
 </body>
 </html>
