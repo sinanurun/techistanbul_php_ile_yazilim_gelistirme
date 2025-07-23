@@ -5,7 +5,8 @@
 
 // setcookie( isim, değer, süresi, path )
 setcookie("kullaniciAdi", "Ahmet", time() + (60*60*24*7), "/"); // 7 gün geçerli
-
+setcookie("kullaniciDili", "Tr", time() + (60*60*24*7), "/"); // 7 gün geçerli
+echo "Cookie oluşturuldu";
 /*
 time() + saniye cinsinden süre → cookie'nin ne kadar süre tutulacağını belirtir.
 "Ahmet" → cookie'nin değeri

@@ -4,7 +4,7 @@
 
 include 'ornek01.php';
 
-$sql = "INSERT INTO kullanicilar (ad, email) VALUES ('Ayşe', 'ayse@example.com')";
+$sql = "INSERT INTO kursiyerler (ad, email, durum) VALUES ('Ayşe', 'ayse@example.com',1)";
 if ($baglanti->query($sql) === TRUE) {
     echo "Kayıt başarıyla eklendi.";
 } else {

@@ -4,7 +4,7 @@
 
 include 'ornek01.php';
 
-$sql = "SELECT id, ad, email FROM kullanicilar";
+$sql = "SELECT id, ad, email FROM kursiyerler";
 $sonuc = $baglanti->query($sql);
 
 if ($sonuc->num_rows > 0) {

@@ -12,7 +12,7 @@ session_start(); // Her zaman en başta olmalı!
 if(isset($_SESSION['kullaniciAdi'])) {
     echo "Hoş geldin, " . $_SESSION['kullaniciAdi'];
 }else{
-    echo 'Daha önce oturum açma işlemi gerçekleşmemiş';
+    echo 'Daha önce oturum açma işlemi gerçekleşmemiş lütfen oturum açısınız';
 }
 
 ?>

@@ -3,7 +3,7 @@
 $host = "localhost";
 $kullanici = "root";
 $sifre = "";
-$veritabani = "test_db";
+$veritabani = "techistanbul";
 
 $baglanti = new mysqli($host, $kullanici, $sifre, $veritabani);
 

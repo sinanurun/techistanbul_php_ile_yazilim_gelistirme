@@ -12,5 +12,8 @@ session_destroy();
 
 echo "Session sonlandırıldı!";
 
+
+  echo "eposta " . $_SESSION['email'];
+    echo "kullanici adi " . $_SESSION['kullaniciAdi'];
 ?>
 

@@ -3,9 +3,9 @@
 
 
 // Dizi çerezi oluşturma
-setcookie("kullanici[adi]", "Mehmet", time() + 3600);
-setcookie("kullanici[soyadi]", "Demir", time() + 3600);
-setcookie("kullanici[yas]", "35", time() + 3600);
+setcookie("kullanici[adi]", "Mehmet", time() + 30); //30 sn tarayıca saklar
+setcookie("kullanici[soyadi]", "Demir", time() + 30);
+setcookie("kullanici[yas]", "35", time() + 30);
 
 // Okuma
 if(isset($_COOKIE["kullanici"])) {

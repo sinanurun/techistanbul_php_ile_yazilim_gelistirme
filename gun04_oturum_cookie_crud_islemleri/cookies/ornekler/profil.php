@@ -1,7 +1,7 @@
 <?php
 // Giriş kontrolü
 if(!isset($_COOKIE['giris_yapan'])) {
-    header('Location: giris.php');
+    header('Location: giris_formu.php');
     exit;
 }
 
