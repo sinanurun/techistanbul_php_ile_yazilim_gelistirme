@@ -1,45 +1,40 @@
-🐘 PHP ile Yazılım Geliştirme Atölyesi
-Teknofest İstanbul / TechIstanbul Katılımcıları için Kaynak Rehberi
+PHP ile Yazılım Geliştirme Atölyesi
+Techİstanbul tarafından düzenlenen "PHP ile Yazılım Geliştirme" atölye çalışmasının kaynakları ve materyallerini içeren bir depodur.
 
-Bu rehber, atölye sırasında ve sonrasında PHP öğrenim sürecinizde size rehberlik edecek kaynakları, araçları ve videoları bir araya getirmektedir. Keyifli ve verimli öğrenmeler!
+📺 Atölye Kayıtları
+Atölye çalışmasının tüm oturumlarının video kayıtları:
 
-📺 Atölye Videoları (YouTube Canlı Yayınları)
-Tüm atölye oturumlarını kaçırdıysanız veya tekrar etmek istiyorsanız, aşağıdaki bağlantılardan izleyebilirsiniz:
+Tarih	Oturum Konuları	Video Linki
+2 Temmuz	PHP'ye Giriş, Temel Syntax ve Kurulum	YouTube'da İzle
+9 Temmuz	Fonksiyonlar, Diziler ve Nesne Yönelimli Programlama	YouTube'da İzle
+16 Temmuz	Veritabanı İşlemleri ve Form Yönetimi	YouTube'da İzle
+23 Temmuz	Proje Geliştirme ve Best Practices	YouTube'da İzle
+📚 Öğrenme Kaynakları
+🌐 Çevrimiçi Dökümanlar ve Eğitimler
+W3Schools PHP Tutorial: Kapsamlı referans ve örnekler - https://www.w3schools.com/php/
 
-2 Temmuz: PHP Giriş & Kurulum
-9 Temmuz: Temel Sözdizimi & Değişkenler
-16 Temmuz: Koşullar, Döngüler & Fonksiyonlar
-23 Temmuz: Form İşleme & Veritabanı Bağlantısı
-✅ Videoları izlerken not almayı ve örnekleri kendiniz yazmayı unutmayın! 
+GeeksforGeeks PHP Tutorial: Detaylı açıklamalar ve örnekler - https://www.geeksforgeeks.org/php/
 
-📚 Öğrenim Kaynakları
-📘 Resmi & Detaylı Eğitim Siteleri
-W3Schools - PHP Tutorial
-Basit, örnek odaklı ve hızlı başvuru için ideal. HTML ile entegrasyonu çok iyi anlatılır.
-GeeksforGeeks - PHP Tutorial
-Detaylı konu anlatımları, örnekler ve kariyer rehberiyle zengin içerik.
-PHPR.org - PHP Dersleri
-Türkçe, sıfırdan ileri seviyeye kadar kapsamlı ve samimi bir anlatım.
+PHP Resmi Dökümantasyon: Resmi PHP kılavuzu - https://www.php.net/manual/tr/
 
-🎓 Video Eğitim Platformu
-BTK Akademi - PHP 8 ile Web Uygulama Geliştirme
-Ücretsiz, sertifikalı ve projeye dayalı tam bir eğitim serisi. Atölyeden sonra tamamlayıcı olarak önerilir.
-🛠️ Geliştirici Araçları
-💻 Online PHP Derleyici (Deneme Ortamı)
-Programiz Online PHP Compiler
-Hemen kod yazmaya başlamak, küçük snippet’leri test etmek için mükemmel bir araç. Yerel kurulum gerekmez.
-🗺️ Kariyer ve İlerleme Yol Haritaları
-PHP öğrenmekle kalmayıp, profesyonel bir backend geliştirici olmak istiyorsanız bu yol haritalarını inceleyin:
+🎥 Video Eğitimler
+BTK Akademi - PHP 8 ile Web Uygulama Geliştirme: Ücretsiz Türkçe video eğitim - https://www.btkakademi.gov.tr/portal/course/php-8-ile-web-uygulama-gelistirme-25053
 
-Backend Developer Roadmap 2025
-PHP dahil tüm backend teknolojilerinin genel manzarasını gösterir. Git, veritabanları, API’ler, deployment gibi kritik konuları kapsar.
-PHP Developer Roadmap
-PHP’ye özel ilerleme yolu. Framework’ler (Laravel, Symfony), testing, security gibi konuları adım adım gösterir.
-🎯 İpucu: Her konuyu öğrendikten sonra basit bir proje yaparak pekiştirin. “Hello World” yetmez — bir “To-Do List” ya da “Blog Sistemi” hedefleyin. 
+🧭 Yol Haritaları
+Backend Developer Yol Haritası: https://roadmap.sh/backend
 
-🤝 Katkı ve Geri Bildirim
-Bu rehber açık kaynaklıdır. Eksik gördüğünüz bir kaynak varsa veya yeni bir araç keşfettiyseniz, lütfen katkıda bulunun veya bana bildirin. Hep birlikte daha iyi bir kaynak oluşturabiliriz!
+PHP Developer Yol Haritası: https://roadmap.sh/php
 
-“Bir dili öğrenmenin en iyi yolu, onunla bir şeyler inşa etmektir.” — Bilinmeyen 
+⚡ Online Araçlar
+Online PHP Compiler: Kodlarınızı çevrimiçi test edin - https://www.programiz.com/php/online-compiler/
 
-Kodlamaya devam edin, deneyin, hata yapın ve öğrenin! 🚀
+🚀 Nasıl Kullanılır?
+Bu depoyu, atölye çalışması sırasında işlenen konuları tekrar etmek ve öğrenme sürecinizi desteklemek için kullanabilirsiniz. Video kayıtlarını izleyerek teorik bilgileri edinebilir, önerilen kaynaklardan pratik yaparak kendinizi geliştirebilirsiniz.
+
+💡 Katkıda Bulunma
+Eğer eklemek istediğiniz kaynaklar veya düzeltmeler varsa, lütfen bir pull request oluşturunuz.
+
+📞 İletişim
+Techİstanbul hakkında daha fazla bilgi için tech.istanbul adresini ziyaret edebilirsiniz.
+
+Not: Bu depo, Techİstanbul tarafından düzenlenen atölye çalışmasının kaynaklarını bir araya getirmek amacıyla oluşturulmuştur. Tüm içerikler ilgili sahiplerine aittir.
