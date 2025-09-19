@@ -5,10 +5,14 @@ Techİstanbul tarafından düzenlenen "PHP ile Yazılım Geliştirme" atölye ç
 Atölye çalışmasının tüm oturumlarının video kayıtları:
 
 Tarih	Oturum Konuları	Video Linki
-2 Temmuz	PHP'ye Giriş, Temel Syntax ve Kurulum	YouTube'da İzle
-9 Temmuz	Fonksiyonlar, Diziler ve Nesne Yönelimli Programlama	YouTube'da İzle
-16 Temmuz	Veritabanı İşlemleri ve Form Yönetimi	YouTube'da İzle
-23 Temmuz	Proje Geliştirme ve Best Practices	YouTube'da İzle
+
+## PHP ile Yazılım Geliştirme Atölyesi Youtube Videoları Linkleri
+
+- **2 Temmuz:** [YouTube İzle](https://www.youtube.com/live/Epl-PW6FCIw  )
+- **9 Temmuz:** [YouTube İzle](https://youtube.com/live/KxLaVu8tL28  )
+- **16 Temmuz:** [YouTube İzle](https://www.youtube.com/live/MjsPipo3DFI  )
+- **23 Temmuz:** [YouTube İzle](https://youtube.com/live/ugGhjdcHAis  )
+
 📚 Öğrenme Kaynakları
 🌐 Çevrimiçi Dökümanlar ve Eğitimler
 W3Schools PHP Tutorial: Kapsamlı referans ve örnekler - https://www.w3schools.com/php/
